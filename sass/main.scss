@@ -1,0 +1,120 @@
+html, body {
+    background-color: #eee;
+}
+
+.nowtv {
+
+    font-family: Arial;
+    width: 940px; /* 940gs :) */
+    margin: 0 auto;
+
+    .logo {
+        margin: 10px 5px;
+    }
+
+    .account {
+        float: right;
+        border: 1px solid purple;
+        margin-top: -1px;
+        background-color: white;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin-right: 10px;
+
+        a {
+            display: inline-block;
+            padding: 10px;
+            border-left: 1px solid purple;
+        }
+
+        a:first {
+            border-left: 0;
+        }
+
+    }
+
+    .account__actions:before {
+        content: url("/images/user-profile.png");
+        display: inline-block;
+        line-height: 1;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    $navigation-height: 58px;
+    .navigation {
+        height: $navigation-height;
+    }
+    .navigation__links {
+        float: left;
+
+        a:before {
+            content: url("/images/navigation/divider.png");
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        a:first-child:before {
+            content: url("/images/navigation/start.png");
+            vertical-align: middle;
+        }
+        a {
+            float: left;
+            display: inline-block;
+            height: $navigation-height;
+            line-height: $navigation-height;
+            background-image: url("/images/navigation/background.png");
+            color: #ccc;
+            padding-right: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+    }
+    .search {
+        float: left;
+    }
+    .search__input {
+        outline: none;
+        background-image: url("/images/search.png");
+        height: $navigation-height - 3;
+        padding-bottom: 3px;
+        width: 210px;
+        padding-left: 43px;
+        border: 0;
+        font-size: 14px;
+    }
+    .search-results {
+        display: none;
+        position: absolute;
+        margin-left: -125px;
+        margin-top: -5px;
+        min-height: 200px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0px 0px 3px 3px #ccc;
+        background-color: white;
+    }
+    .search__input:focus + .search-results {
+        display: block;
+    }
+    .search-results__filters {
+        float: left;
+        width: 115px;
+        padding: 5px;
+
+        a {
+            display: block;
+            text-align: right;
+        }
+    }
+    .search-results__list {
+        float: left;
+        width: 240px;
+        padding: 5px;
+        a {
+            display: block;
+        }
+    }
+}
