@@ -23,7 +23,7 @@ html, body {
     .nowtv .account a:first {
       border-left: 0; }
   .nowtv .account__actions:before {
-    content: url("/images/user-profile.png");
+    content: url("images/user-profile.png");
     display: inline-block;
     line-height: 1;
     vertical-align: middle;
@@ -33,19 +33,19 @@ html, body {
   .nowtv .navigation__links {
     float: left; }
     .nowtv .navigation__links a:before {
-      content: url("/images/navigation/divider.png");
+      content: url("images/navigation/divider.png");
       display: inline-block;
       line-height: 1;
       vertical-align: middle; }
     .nowtv .navigation__links a:first-child:before {
-      content: url("/images/navigation/start.png");
+      content: url("images/navigation/start.png");
       vertical-align: middle; }
     .nowtv .navigation__links a {
       float: left;
       display: inline-block;
       height: 58px;
       line-height: 58px;
-      background-image: url("/images/navigation/background.png");
+      background-image: url("images/navigation/background.png");
       color: #ccc;
       padding-right: 12px;
       font-size: 12px;
@@ -56,7 +56,7 @@ html, body {
     float: left; }
   .nowtv .search__input {
     outline: none;
-    background-image: url("/images/search.png");
+    background-image: url("images/search.png");
     height: 55px;
     padding-bottom: 3px;
     width: 210px;
